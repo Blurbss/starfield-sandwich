@@ -17,6 +17,9 @@
         document.getElementsByTagName('head')[0].appendChild(meta);
       }
 
+	canvas.style.width = "960px";
+	canvas.style.height = "600px";
+
       createUnityInstance(document.querySelector("#unity-canvas"), {
         dataUrl: "Build/build.data",
         frameworkUrl: "Build/build.framework.js",
