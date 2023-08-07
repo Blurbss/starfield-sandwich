@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  text-align: center;
+  background: #000;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  padding-top: env(safe-area-inset-top);
+}
+
+@media screen and (min-width: 960px) {
+  canvas {
+    width: 960px;
+    height: 600px;
+  }
+}
