@@ -62,13 +62,8 @@
 				scaleToFit = true;
 			}
 			function progressHandler(progress) {
-
-				var el = document.createElement("h1");
-				el.innerHTML = "LOADING...";
-				el.style.width = '100%';
-				el.style.height = '100%';
-				canvas.appendChild(el);
-				canvas.style.backgroundSize = '100% 1rem';
+				canvas.style.background = "no-repeat center url('loading.jpg')";
+				canvas.style.backgroundSize = '100% 100%';
 			}
 			function onResize() {
 				var container = canvas.parentElement;
